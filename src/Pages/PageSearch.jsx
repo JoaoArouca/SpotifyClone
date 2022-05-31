@@ -1,11 +1,11 @@
 import React from 'react';
 
 function PageSearch() {
-  return (
-    <div>
+	return (
+		<div>
       Search
-    </div>
-  );
+		</div>
+	);
 }
 
 export default PageSearch;

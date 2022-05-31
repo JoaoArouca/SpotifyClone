@@ -1,11 +1,11 @@
 import React from 'react';
 
 function PageAlbum() {
-  return (
-    <div>
+	return (
+		<div>
       Album
-    </div>
-  );
+		</div>
+	);
 }
 
 export default PageAlbum;
