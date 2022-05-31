@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Provider from './Context/Provider';
 
 function App() {
   return (
-    <div />
+    <Provider>
+      <div />
+    </Provider>
   );
 }
 
