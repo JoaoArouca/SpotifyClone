@@ -1,11 +1,11 @@
 import React from 'react';
 
 function PageProfile() {
-  return (
-    <div>
+	return (
+		<div>
       Profile
-    </div>
-  );
+		</div>
+	);
 }
 
 export default PageProfile;

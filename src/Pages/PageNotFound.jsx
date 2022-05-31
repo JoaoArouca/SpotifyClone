@@ -1,11 +1,11 @@
 import React from 'react';
 
 function PageNotFound() {
-  return (
-    <div>
+	return (
+		<div>
       Not Found - 404
-    </div>
-  );
+		</div>
+	);
 }
 
 export default PageNotFound;

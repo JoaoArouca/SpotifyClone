@@ -1,11 +1,11 @@
 import React from 'react';
 
 function PageProfileEdit() {
-  return (
-    <div>
+	return (
+		<div>
       Edit
-    </div>
-  );
+		</div>
+	);
 }
 
 export default PageProfileEdit;

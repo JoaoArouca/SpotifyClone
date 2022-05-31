@@ -1,11 +1,11 @@
 import React from 'react';
 
 function PageFavorites() {
-  return (
-    <div>
+	return (
+		<div>
       Favorites
-    </div>
-  );
+		</div>
+	);
 }
 
 export default PageFavorites;
