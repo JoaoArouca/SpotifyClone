@@ -1,0 +1,9 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "jsx": true,
+    "browser": true,
+    "es6": true,
+    "bootstrap": true,
+  }
+}

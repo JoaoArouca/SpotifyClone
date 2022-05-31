@@ -6,7 +6,8 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:import/errors"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,7 +17,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react", "import"
     ],
     "rules": {
     }

@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Provider from './Context/Provider';
+import { Route, Routes } from 'react-router-dom';
+import PageLogin from './Pages/PageLogin';
 
 function App() {
   return (
     <Provider>
-      <div />
+      <Routes>
+        <Route exact path="/" element={ <PageLogin /> } />
+      </Routes>
     </Provider>
   );
 }
