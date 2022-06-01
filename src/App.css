@@ -59,4 +59,9 @@
   .login-title {
     margin-bottom: 20px;
   }
+
+
+  .header {
+    flex-direction: column;
+  }
 }
