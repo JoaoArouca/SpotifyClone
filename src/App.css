@@ -63,5 +63,84 @@
 
   .header {
     flex-direction: column;
+    background: linear-gradient(black, rgba(50, 50, 50));
+  }
+  .header-logo {
+    width: 170px;
+    height: 100px;
+  }
+  .header-section {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-profile {
+    color: whitesmoke;
+  }
+  .header-links {
+    color: whitesmoke;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+  }
+  .header-nav {
+    justify-content: space-around;
+    margin-bottom: 1rem!important;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+
+  .search-button {
+    border: 1px solid black;
+    outline: none;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-right: 10px;
+    
+  }
+  .search-button:active {
+    width: 70px;
+    height: 70px;
+  }
+  .search-form {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    margin: 40px 0 0;
+    justify-content: center;
+    align-content: center;
+  }
+  .search-input {
+    max-width: 200px;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 50px;
+    outline: none;
+    font-size: x-large;
+    padding-left: 10px;
+  }
+
+
+  .search-section {
+    flex-wrap: wrap;
+  }
+  .card-album {
+    width: 163px;
+    max-width: 200px;
+    margin: 10px;
+    color: black;
+    max-height: 350px;
+    height: 350px;
+  }
+  .cardFoot-album {
+    max-height: 20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .cardTitle-album {
+    max-height: 40%;
   }
 }

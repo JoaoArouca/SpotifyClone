@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { getUser } from '../Services/UserApi';
-import { ReactComponent as ProfileLogo } from '../Icons/ProfileIcon.svg';
-import { ReactComponent as SpotifyLogo } from '../Icons/spotifyLogo.svg';
+import { ReactComponent as ProfileLogo } from '../Icons/sasuke.svg';
+import { ReactComponent as SpotifyLogo } from '../Icons/spotifyBlack.svg';
 import { Link } from 'react-router-dom';
 
 function Header() {
 	const [name, setName] = useState('');
 
 
-
 	useEffect(() => {
 		const requestUser = async () => {
 			const user = await getUser();
 			setName(user.name);
-			return user;
 		};
 		requestUser();
 
@@ -21,16 +19,16 @@ function Header() {
 
 	return (
 		<header className='container header'>
-			<section className='container'>
-				<div>
+			<section className='container header-section'>
+				<SpotifyLogo className='header-logo' />
+				<div className='header-profile'>
 					<ProfileLogo />{ name }
 				</div>
-				<SpotifyLogo style={ {width: '170px', height: '100px'} } />
 			</section>
-			<nav>
-				<Link className='navbar-brand' to="/search">Search</Link>
-				<Link className='navbar-brand' to="/favorites">Favorites</Link>
-				<Link className='navbar-brand' to="/profile">Profile</Link>
+			<nav className='header-nav container'>
+				<Link className='header-links' to="/search">Search</Link>
+				<Link className='header-links' to="/favorites">Favorites</Link>
+				<Link className='header-links' to="/profile">Profile</Link>
 			</nav>
 		</header>
 	);
