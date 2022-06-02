@@ -9,6 +9,7 @@ function Provider({ children }) {
 	const [loading, setLoading] = useState(false);
 	const [search, setSearch] = useState('');
 	const [albums, setAlbums] = useState([]);
+	const [musics, setMusics] = useState([]);
 
 	const globalState = {
 		user,
@@ -20,7 +21,9 @@ function Provider({ children }) {
 		search,
 		setSearch,
 		albums,
-		setAlbums
+		setAlbums,
+		musics,
+		setMusics
 	};
 
 	return (

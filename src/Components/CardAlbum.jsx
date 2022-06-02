@@ -9,7 +9,7 @@ function CardAlbum({ data }) {
 	const { loading } = useContext(SpotifyContext);
 
 	return (
-		loading ? null && data !== undefined
+		loading ? null
 			: (
 				<Link to={ `/album/${data.collectionId}` } style={ {textDecoration: 'none'} } >
 					<Card className='card-album'>

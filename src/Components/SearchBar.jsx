@@ -32,7 +32,7 @@ function SearchBar() {
 					search.length > 2 ? <MusicBlack /> : <MusicWhite />
 				}
 			</button>
-			<input  className='search-input' onChange={ (e) => onInputChange(e) } type="text" />
+			<input placeholder='Digite o nome do artista' className='search-input' onChange={ (e) => onInputChange(e) } type="text" />
 		</form>
 	);
 }

@@ -25,8 +25,7 @@ function PageSearch() {
 							albums.length ? albums.map((A, index) => <CardAlbum key={index} data={A} />)
 								: null
 						}
-					</section>
-					
+					</section>		
 				</main>
 			)
 	);
